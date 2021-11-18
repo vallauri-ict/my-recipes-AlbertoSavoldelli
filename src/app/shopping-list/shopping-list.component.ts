@@ -9,7 +9,7 @@ import { IngredientModel } from '../models/ingredient.model';
 export class ShoppingListComponent implements OnInit {
   ingredients:IngredientModel[]=[
     new IngredientModel("Pasta",500),
-    new IngredientModel("Gnocchi",2)
+    new IngredientModel("Pomodoro",2)
   ]
   constructor() { }
 
