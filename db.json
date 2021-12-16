@@ -1,0 +1,28 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Spaghetti alla chitarra",
+            "description": "Un particolare tipo di pasta che...",
+            "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2017/02/Maccheroni-alla-chitarra.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Lasagne alla bolognese",
+            "description": "Pasta emiliana molto calorica sempre presente...",
+            "imagePath": "https://www.foodblog.it/wp-content/uploads/2020/01/lasagne.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Gnocchi ai formaggi",
+            "description": "Pasta piemontese",
+            "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Tiramisu",
+            "description": "Classico dolce italiano",
+            "imagePath": "https://www.buttalapasta.it/wp-content/uploads/2012/04/ricetta-tiramisu-classico.jpg"
+        }
+    ]
+}
