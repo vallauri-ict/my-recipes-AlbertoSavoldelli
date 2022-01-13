@@ -9,8 +9,23 @@
     </div>
 </div>
 <div class="row">
+    <div class="col-xs-12">{{ recipeService.selectedRecipe.description }}</div>
+</div>
+
+<div class="row">
     <div class="col-xs-12">
-        <div class="button-group">
+        <h4>Ingredients:</h4>
+        <ul class="list-group" style="list-style: none;">
+            <li *ngFor="let ingredient of recipeService.selectedRecipe.ingredients">
+                {{ ingredient.name }} - {{ ingredient.amount }}
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="button-group" appDropdown>
             <button class="btn btn-primary dropdown-toggle">Manage Recipe
                 <span class="caret"></span>
             </button>
@@ -21,11 +36,4 @@
             </ul>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-xs-12">{{ recipeService.selectedRecipe.description }}</div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">Ingredients</div>
 </div>
