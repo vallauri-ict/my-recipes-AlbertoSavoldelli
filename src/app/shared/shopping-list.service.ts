@@ -11,7 +11,7 @@ export class ShoppingListService {
   constructor(private dataStorageService: DataStorageService) { }
 
   getIngredients() {
-    this.dataStorageService.sendGetRequest('ingredients').subscribe(
+    this.dataStorageService.sendGetRequest('shopping-list').subscribe(
       (data) => {
         this.ingredients = data as IngredientModel[];
       },

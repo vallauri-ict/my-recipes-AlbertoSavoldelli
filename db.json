@@ -36,7 +36,7 @@
       "id": 4,
       "name": "Tiramisu",
       "description": "Classico dolce italiano con panna e mascarpone ...",
-      "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg"
+      "imagePath": "https://www.buttalapasta.it/wp-content/uploads/2012/04/ricetta-tiramisu-classico.jpg"
     }
   ],
   "shopping-list": [
@@ -57,7 +57,7 @@
     },
     {
       "name": "Farina",
-      "amount": 500,
+      "amount": 502,
       "id": 5
     },
     {
