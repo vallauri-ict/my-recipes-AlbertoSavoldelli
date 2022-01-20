@@ -1,46 +1,79 @@
 {
-    "recipes": [
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti alla chitarra",
+      "description": "Un particolare tipo di pasta che ...",
+      "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2017/02/Maccheroni-alla-chitarra.jpg",
+      "ingredients": [
         {
-            "id": 1,
-            "name": "Spaghetti alla chitarra",
-            "description": "Un particolare tipo di pasta che...",
-            "ingredients":["Farina","Sugo",""],
-            "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2017/02/Maccheroni-alla-chitarra.jpg"
+          "name": "Farina",
+          "amount": 100
         },
         {
-            "id": 2,
-            "name": "Lasagne alla bolognese",
-            "description": "Pasta emiliana molto calorica sempre presente...",
-            "imagePath": "https://www.foodblog.it/wp-content/uploads/2020/01/lasagne.jpg"
+          "name": "Acqua",
+          "amount": 100
         },
         {
-            "id": 3,
-            "name": "Gnocchi ai formaggi",
-            "description": "Pasta piemontese",
-            "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg"
-        },
-        {
-            "id": 4,
-            "name": "Tiramisu",
-            "description": "Classico dolce italiano",
-            "imagePath": "https://www.buttalapasta.it/wp-content/uploads/2012/04/ricetta-tiramisu-classico.jpg"
+          "name": "Sale",
+          "amount": 100
         }
-    ],
-    "ingredients":[
-        {
-            "id":1,
-            "name": "Apples",
-            "amount": 5
-        },
-        {
-            "id":2,
-            "name": "Tomatoes",
-            "amount": 10
-        },
-        {
-            "id":3,
-            "name": "Potatoes",
-            "amount": 15
-        }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lasagne alla bolognese",
+      "description": "Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...",
+      "imagePath": "https://www.foodblog.it/wp-content/uploads/2020/01/lasagne.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Gnocchi ai formaggi",
+      "description": "Ottimi soprattutto in Val Varaita nella variante 'Ravioles' ...",
+      "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tiramisu",
+      "description": "Classico dolce italiano con panna e mascarpone ...",
+      "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg"
+    }
+  ],
+  "shopping-list": [
+    {
+      "id": 1,
+      "name": "Sugar",
+      "amount": 11
+    },
+    {
+      "id": 2,
+      "name": "Tomato",
+      "amount": 2
+    },
+    {
+      "name": "Fish",
+      "amount": 5,
+      "id": 3
+    },
+    {
+      "name": "Farina",
+      "amount": 500,
+      "id": 5
+    },
+    {
+      "name": "Acqua",
+      "amount": 500,
+      "id": 6
+    },
+    {
+      "name": "Sale",
+      "amount": 500,
+      "id": 7
+    },
+    {
+      "name": "Vongole",
+      "amount": 1,
+      "id": 8
+    }
+  ]
 }
