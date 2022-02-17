@@ -5,6 +5,7 @@ import { DataStorageService } from 'src/app/shared/data-storage.service';
   providedIn: 'root'
 })
 export class RecipeService {
+
   recipes:RecipeModel[]=[];
   selectedRecipe:RecipeModel;
   constructor(private dataStorageService:DataStorageService) { }
@@ -16,5 +17,16 @@ export class RecipeService {
     error=>{
       console.error(error);
     })
+  }
+
+  getRecipe(index: any) {
+    this.dataStorageService.sendGetRequest('recipes/' + index).subscribe(
+      data => {
+        this.selectedRecipe = data as RecipeModel;
+      },
+      error => {
+        console.error(error);
+      }
+    )
   }
 }
