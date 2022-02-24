@@ -5,6 +5,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 //creiamo 3 path, due specifici e uno di default
 //che parte in ogni caso se non viene specificato un path
@@ -21,7 +22,9 @@ const appRoutes: Routes = [
     component: RecipesComponent,
     children: [
       { path: '', component: RecipeStartComponent },
-      { path: ':id', component: RecipeDetailComponent }
+      { path:'new', component:RecipeEditComponent},
+      { path:':id', component:RecipeDetailComponent},
+      { path:':id/edit', component:RecipeEditComponent}
     ]
   },
   {

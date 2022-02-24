@@ -24,19 +24,61 @@
       "id": 2,
       "name": "Lasagne alla bolognese",
       "description": "Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...",
-      "imagePath": "https://www.foodblog.it/wp-content/uploads/2020/01/lasagne.jpg"
+      "imagePath": "https://www.foodblog.it/wp-content/uploads/2020/01/lasagne.jpg",
+      "ingredients": [
+        {
+          "name": "Farina",
+          "amount": 100
+        },
+        {
+          "name": "Acqua",
+          "amount": 100
+        },
+        {
+          "name": "Sale",
+          "amount": 100
+        }
+      ]
     },
     {
       "id": 3,
       "name": "Gnocchi ai formaggi",
       "description": "Ottimi soprattutto in Val Varaita nella variante 'Ravioles' ...",
-      "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg"
+      "imagePath": "https://blog.giallozafferano.it/ricettiamoconmary/wp-content/uploads/2020/02/IMG_7710-960x625.jpg",
+      "ingredients": [
+        {
+          "name": "Farina",
+          "amount": 100
+        },
+        {
+          "name": "Acqua",
+          "amount": 100
+        },
+        {
+          "name": "Sale",
+          "amount": 100
+        }
+      ]
     },
     {
       "id": 4,
       "name": "Tiramisu",
       "description": "Classico dolce italiano con panna e mascarpone ...",
-      "imagePath": "https://www.buttalapasta.it/wp-content/uploads/2012/04/ricetta-tiramisu-classico.jpg"
+      "imagePath": "https://www.buttalapasta.it/wp-content/uploads/2012/04/ricetta-tiramisu-classico.jpg",
+      "ingredients": [
+        {
+          "name": "Farina",
+          "amount": 100
+        },
+        {
+          "name": "Acqua",
+          "amount": 100
+        },
+        {
+          "name": "Sale",
+          "amount": 100
+        }
+      ]
     }
   ],
   "shopping-list": [
