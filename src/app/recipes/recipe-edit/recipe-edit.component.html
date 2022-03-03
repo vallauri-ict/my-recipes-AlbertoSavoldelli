@@ -7,11 +7,11 @@
         </div>
         <div class="form-group">
             <label for="description">Descrizione:</label>
-            <textarea name="description" id="" rows="5" class="form-control"></textarea>
+            <textarea name="description" id="" rows="5" class="form-control" [(ngModel)]="recipeDescription"></textarea>
         </div>
         <div class="form-group">
             <label for="imgagePath">Image:</label>
-            <input type="file" id="imagePath" class="form-control" [(ngModel)]="recipeImagePath">
+            <input type="file" id="imagePath" class="form-control" [(ngModel)]="recipeImagePath" (change)="onSelectFile($event)">
         </div>
         <div class="form-group">
             <label for="ingredients">Ingredients:</label>

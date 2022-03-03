@@ -13,12 +13,12 @@ export class DataStorageService {
   public sendGetRequest(endpoint: string) {
     return this.httpClient.get(this.REST_API_SERVER + endpoint);
   }
-  public sendPostRequest(endpoint: string, ingredient: IngredientModel) {
-    return this.httpClient.post(this.REST_API_SERVER + endpoint, ingredient);
+  public sendPostRequest(endpoint: string, data: any) {
+    return this.httpClient.post(this.REST_API_SERVER + endpoint, data);
   }
   public sendPatchtRequest(
     endpoint: string,
-    data: any,
+    data: any
   ) {
     return this.httpClient.patch(this.REST_API_SERVER + endpoint,data);
   }

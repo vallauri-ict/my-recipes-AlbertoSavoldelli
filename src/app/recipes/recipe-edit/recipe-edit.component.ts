@@ -27,6 +27,7 @@ export class RecipeEditComponent implements OnInit {
         if(this.recipeService.selectedRecipe){
           this.recipeName=this.recipeService.selectedRecipe.name;
           this.recipeDescription=this.recipeService.selectedRecipe.description;
+          this.recipeImagePath=this.recipeService.selectedRecipe.imagePath;
           for (let ingredient of this.recipeService.selectedRecipe.ingredients) {
             this.recipeIngredients+=ingredient.name+":"+ingredient.amount
           }
@@ -48,13 +49,13 @@ export class RecipeEditComponent implements OnInit {
   {
     let ingredients = this.manageIngredients(this.recipeIngredients);
     let recipe:RecipeModel = new RecipeModel(this.recipeName,this.recipeDescription,this.recipeImagePath,ingredients);
+    if(this.recipeImagePath.indexOf("fakepath")!=-1) recipe.imagePath=this.base64image
     if(this.editMode == "add"){
-      // this.recipeService.postRecipe(recipe);
+      this.recipeService.postRecipe(recipe);
     }
     else{
-      // this.recipeService.patchRecipe(this.recipeService.selectedRecipe.id,recipe);
+      this.recipeService.patchRecipe(this.recipeService.selectedRecipe.id,recipe);
     }
-    alert("Recipe Saved");
     this.router.navigate(['/recipes']);
   }
 
@@ -68,6 +69,20 @@ export class RecipeEditComponent implements OnInit {
       retVal.push(ingredient);
     }
     return retVal;
+  }
+  
+  base64image:any="";
+  onSelectFile(event:any){
+    if(event.target.files&&event.target.files[0]){
+      let filePath=event.target.files[0];
+      var reader=new FileReader();
+      reader.readAsDataURL(filePath);
+      reader.onload=()=>{
+         this.base64image=reader.result?.toString()
+      }
+
+    }
+
   }
 
 }
